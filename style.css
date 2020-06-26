@@ -2,7 +2,6 @@ body{
 	background: #fe8c00;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -67,8 +66,6 @@ html,body{
     width: 30px;
     height: 30px;
     margin: 5px;
-
-
     outline: 0;
  }
 
@@ -94,7 +91,7 @@ html,body{
  	outline: 0;
  }
  #container #controls #add{
- 	background-color: greenyellow;
+ 	background-color: orange;
  	border-radius: 25px;
  }
  #container #controls button:hover{
@@ -122,7 +119,6 @@ html,body{
  }
  button{
 	 margin: 5px auto;
-
  }
  p{
 	 text-align: center;
