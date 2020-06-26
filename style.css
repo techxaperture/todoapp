@@ -1,0 +1,140 @@
+body{
+	background: #fe8c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+html,body{
+	height: 100%;
+	width: 100%;
+}
+*{
+	font-family: sans-serif;
+	margin: 0;
+	padding: 0;
+}
+ #container{
+ 	width: 350px;
+ 	margin: 0 auto;
+	 display: flex;
+	 flex-direction: column;
+	 align-items: center;
+ 	background-color: white;
+ 	height: 90%;
+ 	overflow-y: auto;
+ 	color: black;
+ 	
+ 	border-radius: 10px;
+ }
+ #container h1{
+ 	margin: 20px auto;
+ }
+ #container ul{
+	 margin: 10px;
+	 padding: 0;
+	 width: 70%;
+	 display: flex;
+	 flex-direction: column;
+	 justify-content: center;
+ }
+ #container ul li{
+	position: relative;
+	 list-style: none;
+	 word-wrap: break-word;
+	 border:1px solid grey;
+ 	 width: 100%;
+	 opacity: 0;
+	 min-height: 40px;
+ 	 margin: 5px auto;
+ 	
+ }
+ #container ul li label{
+    display: block;
+	position: relative;
+	left: 45px;
+ 	width: 75%;
+ 	
+    line-height: 40px;
+	 font-size: 18px;
+	 padding: 0 ;
+ }
+ #container ul li #check{
+	 position: absolute;
+   left: 0;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+
+
+    outline: 0;
+ }
+
+ #container ul li input[type="checkbox"]:checked + label {
+ 	text-decoration: line-through;
+ 	color: rgba(0,0,0,0.3);
+ }
+ #container #controls{
+ 	width: 60%;
+ 	margin: 0;
+ }
+ #container #controls #input{
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    border: 2px solid #b5c5dd;
+    border-radius: 25px;
+ }
+ #container #controls #input:focus{
+ 	outline: 0;
+ }
+ #container #controls #add{
+ 	background-color: greenyellow;
+ 	border-radius: 25px;
+ }
+ #container #controls button:hover{
+ 	transform: scale(1.05);
+ }
+ #container #controls button{
+ 	width: 100%;
+ 	color: white;
+	 border: none;
+ 	height: 40px;
+ 	margin-top: 2px;
+ 	cursor: pointer;
+ 
+ }
+ #container #controls button:focus{
+ 	outline: 0;
+ }
+ #container #controls #remove{
+ 	background-color: red;
+ 	border-radius: 25px;
+ }
+ #container .mycheck{
+ 	opacity: 1;
+ 	border-radius: 10px;
+ }
+ button{
+	 margin: 5px auto;
+
+ }
+ p{
+	 text-align: center;
+ }
+  
+ @media screen and (max-width:500px){
+	 #container{
+		 width: 90%;
+	 }
+
+	*{
+		-webkit-tap-highlight-color: transparent;
+	}
+	
+ }
